@@ -6,7 +6,7 @@ CREATE TABLE prato(
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome varchar(120) NOT NULL UNIQUE,
     preco DECIMAL(10, 2) NOT NULL,
-    descricao  varchar(240) NOT NULL, /*virgula*/
+    descricao  varchar(240) NOT NULL,
 );
 
 CREATE TABLE pedidos(
@@ -106,7 +106,7 @@ INSERT INTO prato (nome, preco, descricao) VALUES
 ('Camarão ao Alho e Óleo', 42.00, 'Camarões salteados no alho e azeite, servidos com arroz branco'),
 ('Penne ao Molho Alfredo', 29.50, 'Massa penne com molho cremoso de queijo e alho'),
 ('Sanduíche de Rosbife', 28.00, 'Pão francês recheado com rosbife, rúcula e mostarda'),
-('Pasta Alla Norma', '35.50', 'Massa tradicional italiana com molho de tomate fresco, berinjela e manjericão'), /*aspas no valor*/
+('Pasta Alla Norma', '35.50', 'Massa tradicional italiana com molho de tomate fresco, berinjela e manjericão'),
 ('Tortilla Espanhola', 24.00, 'Omelete com batatas e cebola caramelizada'),
 ('Fesenjan', 45.00, 'Um ensopado agridoce persa com nozes, romã e frango ou pato.'),
 ('Salada de Panela', 28.50, 'Prato mexicano feito com um tipo de cactus, tomate, cebola, coentro e queijo.'),
@@ -117,7 +117,7 @@ INSERT INTO prato (nome, preco, descricao) VALUES
 ('Bibimbap', 39.50, 'Prato coreano com arroz, vegetais salteados, carne, ovo e molho apimentado.'),
 ('Feijoada', 55.00, 'Uma feijoada vegana feita com feijão preto, cogumelos, e diversos vegetais.');
 
-INSERT INTO pedidos (numero_mesa, nome_cliente) VALUES /*tirado a chave estrangeira*/
+INSERT INTO pedidos (numero_mesa, nome_cliente) VALUES
 (15, 'Ana Silva', 23),
 (3, 'Bruno Costa', 87),
 (29, 'Carla Mendes', 5),
@@ -155,7 +155,7 @@ INSERT INTO pedidos (numero_mesa, nome_cliente) VALUES /*tirado a chave estrange
 (26, 'Ingrid Martins', 88),
 (4, 'Joana Freitas', 80),
 (9, 'Kevin Santos', 43),
-(30, 'Larissa Fernandes', 99), /*prato que não existe*/
+(30, 'Larissa Fernandes', 99),
 (17, 'Matheus Oliveira', 58),
 (5, 'Natália Ramos', 31),
 (12, 'Otávio Souza', 29),
@@ -211,7 +211,7 @@ INSERT INTO pedidos (numero_mesa, nome_cliente) VALUES /*tirado a chave estrange
 (21, 'Valter Ramos', 34),
 (10, 'Wesley Moreira', 50),
 (27, 'Ximena Ribeiro', 39),
---(4, 'Yasmin Castro', 82), /*comentado a linha*/
+--(4, 'Yasmin Castro', 82),
 (15, 'Zé Carlos Silva', 27),
 (8, 'Ana Paula', 33),
 (23, 'Bruno Henrique', 20),
